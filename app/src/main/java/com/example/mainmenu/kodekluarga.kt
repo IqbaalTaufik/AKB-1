@@ -13,8 +13,12 @@ private lateinit var btn1 : Button
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kodekluarga)
         btn1 = findViewById(R.id.tmbl3)
+        btn2 = findViewById(R.id.tmbl2)
         btn1.setOnClickListener{
             startActivity(Intent(this,formngisi::class.java))
+        btn2.setOnClickListener{
+            startActivity(Intent())
+        }
         }
     }
 }
