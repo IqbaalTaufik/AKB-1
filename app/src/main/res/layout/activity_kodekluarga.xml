@@ -48,7 +48,7 @@
         android:fontFamily="@font/rubik_regular"
         android:inputType="textPersonName"
         android:padding="16dp"
-        android:text="Masukkan kode"
+        android:hint="Masukkan kode"
         android:textAllCaps="true"
         android:textAlignment="center"
         android:textSize="20sp"

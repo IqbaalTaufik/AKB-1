@@ -20,10 +20,22 @@ private lateinit var btn3 : Button
         {
             val editText = findViewById<EditText>(R.id.editText2)
             val msg = editText.text.toString()
-            val intent = Intent(this,keluaran::class.java).apply {
-                putExtra(EXTRA_MESSAGE,msg)
+            val edittext = findViewById<EditText>(R.id.editText3)
+            val msg2 = edittext.text.toString()
+            if(msg.isEmpty())
+            {
+                editText.setError("nama tidak boleh kosong!")
             }
-            startActivity(intent)
+            else if (msg2.isEmpty())
+            {
+                edittext.setError("umur tidak boleh kosong!")
+            }
+            else {
+                val intent = Intent(this, keluaran::class.java).apply {
+                    putExtra(EXTRA_MESSAGE, msg)
+                }
+                startActivity(intent)
+            }
         }
     }
 }
