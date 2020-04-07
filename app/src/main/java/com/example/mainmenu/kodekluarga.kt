@@ -15,10 +15,9 @@ private lateinit var btn1 : Button
         setContentView(R.layout.activity_kodekluarga)
         btn1 = findViewById(R.id.tmbl3)
         btn2 = findViewById(R.id.tmbl2)
-        val mskode = findViewById<EditText>(R.id.mkode)
-        val kd = mskode.text.toString()
-        btn2.setOnClickListener{
-            startActivity(Intent(this,formngisi::class.java))
+        btn2.setOnClickListener(){
+            val mskode = findViewById<EditText>(R.id.mkode)
+            val kd = mskode.text.toString()
             if(kd.isEmpty())
             {
                 mskode.setError("masukkan Kode")
@@ -27,8 +26,13 @@ private lateinit var btn1 : Button
             {
                 mskode.setError("kode salah")
             }
+            else
+            {
+                mskode.setError("silahkan beli kode keluarga")
+            }
         btn1.setOnClickListener{
             startActivity(Intent(this,formngisi::class.java))
+
         }
         }
     }
