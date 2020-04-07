@@ -17,7 +17,7 @@ private lateinit var btn1 : Button
         btn2 = findViewById(R.id.tmbl2)
         val mskode = findViewById<EditText>(R.id.mkode)
         val kd = mskode.text.toString()
-        btn1.setOnClickListener{
+        btn2.setOnClickListener{
             startActivity(Intent(this,formngisi::class.java))
             if(kd.isEmpty())
             {
@@ -27,7 +27,7 @@ private lateinit var btn1 : Button
             {
                 mskode.setError("kode salah")
             }
-        btn2.setOnClickListener{
+        btn1.setOnClickListener{
             startActivity(Intent(this,formngisi::class.java))
         }
         }
