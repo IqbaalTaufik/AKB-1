@@ -17,7 +17,7 @@ private lateinit var btn1 : Button
         btn1.setOnClickListener{
             startActivity(Intent(this,formngisi::class.java))
         btn2.setOnClickListener{
-            startActivity(Intent())
+            startActivity(Intent(this,formngisi::class.java))
         }
         }
     }
