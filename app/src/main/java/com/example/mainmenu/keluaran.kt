@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import kotlin.system.exitProcess
 import com.example.mainmenu.EXTRA_MESSAGE as EXTRA
 class keluaran : AppCompatActivity() {
 
@@ -18,6 +19,9 @@ class keluaran : AppCompatActivity() {
         val kluar = "Beres! Sekarang "+nama+" udah bisa ngecek penggunaan HP mu tiap hari buat bantu "+nama+" ngatur waktu :)"
         texte.setText(kluar)
         btn10 = findViewById(R.id.tmbl5)
+        btn10.setOnClickListener{
+                exitProcess(-1)
+        }
 
     }
 }
