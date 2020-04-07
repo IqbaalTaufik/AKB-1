@@ -22,6 +22,5 @@ class keluaran : AppCompatActivity() {
         btn10.setOnClickListener{
                 exitProcess(-1)
         }
-
     }
 }
