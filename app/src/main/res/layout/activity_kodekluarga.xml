@@ -106,7 +106,7 @@
             android:layout_marginTop="24sp"
             android:layout_marginEnd="24sp"
             android:fontFamily="@font/rubik_regular"
-            android:text="Belum punya keluarga?"
+            android:text="Belum punya kode keluarga?"
             android:textAlignment="center"
             android:textSize="17sp" />
 
@@ -122,7 +122,7 @@
             android:layout_marginBottom="32sp"
             android:background="@drawable/tungu"
             android:fontFamily="@font/nunito_bold"
-            android:text="Beli keluarga"
+            android:text="Beli kode keluarga disini"
             android:textColor="#FFFFFF" />
 
     </LinearLayout>
